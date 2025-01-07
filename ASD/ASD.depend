@@ -1,0 +1,32 @@
+# depslib dependency file v1.0
+1735582851 source:c:\users\luigi\documents\git\asd\asd\lezione1.cpp
+	"lezione1.hpp"
+
+1735582851 c:\users\luigi\documents\git\asd\asd\lezione1.hpp
+	<iostream>
+
+1736284654 source:c:\users\luigi\documents\git\asd\asd\main.cpp
+	<iostream>
+	<fstream>
+	"lezione3.hpp"
+
+1735687995 source:c:\users\luigi\documents\git\asd\asd\lezione2.cpp
+	"lezione2.hpp"
+	<iostream>
+	<fstream>
+	<vector>
+
+1735686209 c:\users\luigi\documents\git\asd\asd\lezione2.hpp
+	<iostream>
+	<fstream>
+	<vector>
+
+1736283610 source:c:\users\luigi\documents\git\asd\asd\lezione3.cpp
+	"lezione3.hpp"
+
+1736284209 c:\users\luigi\documents\git\asd\asd\lezione3.hpp
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+
