@@ -34,7 +34,7 @@ void linkeList::stampaImpiegati()
     //Impiegat fantoccio utile a memorizzare la somma totale
     Impiegato *fantoccio = new Impiegato("Fantoccio",0);
     int sum = 0;
-    while(imp->getNext())
+    while(imp)
     {
         imp->getInfo();
         Impiegato imp_sum1("",imp->getSalario());

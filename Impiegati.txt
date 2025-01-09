@@ -1,0 +1,10 @@
+Impiegati Azienda Di Luigi
+0 | Luigi      | 300 |
+1 | Mattia     | 500 | 700
+2 | Antonio    | 100 | 200
+3 | Marco      | 200 | 500
+4 | Hitler     | 700 | 200
+5 | Mussolini  | 800 | 400
+6 | Simeone    | 900 | 900
+7 | MammtAnnur | 200 | 900
+8 | Staiano    | 1   | 1

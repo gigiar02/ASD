@@ -1,0 +1,5 @@
+Impiegati Azienda Di Luigi
+
+0 | Luigi  | 300 |
+1 | Mattia | 500 | 700
+2 | Antonio| 100 | 200
