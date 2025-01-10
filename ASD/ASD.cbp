@@ -33,6 +33,8 @@
 		</Compiler>
 		<Unit filename="lezione1.cpp" />
 		<Unit filename="lezione1.hpp" />
+		<Unit filename="lezione16.cpp" />
+		<Unit filename="lezione16.hpp" />
 		<Unit filename="lezione2.cpp" />
 		<Unit filename="lezione2.hpp" />
 		<Unit filename="lezione3.cpp" />

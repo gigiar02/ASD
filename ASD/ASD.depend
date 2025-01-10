@@ -5,10 +5,10 @@
 1735582851 c:\users\luigi\documents\git\asd\asd\lezione1.hpp
 	<iostream>
 
-1736450688 source:c:\users\luigi\documents\git\asd\asd\main.cpp
+1736522137 source:c:\users\luigi\documents\git\asd\asd\main.cpp
 	<iostream>
 	<fstream>
-	"lezione3.hpp"
+	"lezione16.hpp"
 	<sstream>
 
 1735687995 source:c:\users\luigi\documents\git\asd\asd\lezione2.cpp
@@ -22,12 +22,19 @@
 	<fstream>
 	<vector>
 
-1736285097 source:c:\users\luigi\documents\git\asd\asd\lezione3.cpp
+1736454533 source:c:\users\luigi\documents\git\asd\asd\lezione3.cpp
 	"lezione3.hpp"
 
-1736284209 c:\users\luigi\documents\git\asd\asd\lezione3.hpp
+1736516012 c:\users\luigi\documents\git\asd\asd\lezione3.hpp
 	<iostream>
 	<fstream>
 	<vector>
 	<string>
+
+1736522641 source:c:\users\luigi\documents\git\asd\asd\lezione16.cpp
+	"lezione16.hpp"
+
+1736519480 c:\users\luigi\documents\git\asd\asd\lezione16.hpp
+	<iostream>
+	<vector>
 
