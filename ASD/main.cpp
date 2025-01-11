@@ -23,19 +23,23 @@ using namespace std;
 int main()
 {
     vector<Object> libri;
-    libri.push_back(Object(0,0));
-    libri.push_back(Object(3,2));
+    //libri.push_back(Object(0,0));
+    libri.push_back(Object(5,2));
     libri.push_back(Object(4,3));
     libri.push_back(Object(5,4));
-    libri.push_back(Object(6,5));
+    libri.push_back(Object(6,2));
     int W = 5;
     Zaino zaino(W,libri);
     vector<Object> oggettiInclusi;
-    oggettiInclusi = zaino.problemaZaino01();
+    oggettiInclusi = zaino.problemaZainoMin01(9);
     //cout<<"Oggetti = "<<oggettiInclusi.size();
     for(int i = 0; i < oggettiInclusi.size();i++)
     {
-        cout<<oggettiInclusi[i].weight<<" Value "<<oggettiInclusi[i].value<<endl;
+        cout<<i<<" Weight "<<oggettiInclusi[i].weight<<" Value "<<oggettiInclusi[i].value<<endl;
     }
+    vector<Object> insiemeMinimo;
+
+
+
     return 0;
 }

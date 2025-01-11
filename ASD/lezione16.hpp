@@ -34,9 +34,12 @@ class Zaino
         //Elimina n oggetti che rispettano dei filtri
         //Risolve il problema dello zaino 0-1 e restituisce l'insieme degli elementi inclusi.
         vector<Object> problemaZaino01();
+        vector<Object> problemaZainoMin01(int G);
 
 
 
 };
+
+
 
 
