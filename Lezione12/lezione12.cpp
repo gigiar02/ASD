@@ -64,7 +64,7 @@ void ABR::addNode(int x)
 
 
 }
-
+//IL successore di un nodo x è il piu piccolo tra i piu grandi
 Node* ABR::findSuccessor(Node* x)
 {
     if(!x || !x->getRightChild())
@@ -76,6 +76,21 @@ Node* ABR::findSuccessor(Node* x)
     while(y->getLeftChild())
     {
         y = y->getLeftChild();
+    }
+    return y;
+}
+//Il predecessore di un nodo x è il piu grande tra i piu piccoli
+Node* ABR::findPredecessor(Node* x)
+{
+    if(!x || !x->getLeftChild())
+    {
+        return nullptr;
+    }
+    Node* y = x->getLeftChild();
+    //Cerco il piu grande tra i piu piccoli
+    while(y->getRightChild())
+    {
+        y = y->getRightChild();
     }
     return y;
 }
@@ -182,6 +197,30 @@ void ABR::deleteNode(Node* x)
         }
         delete x;
     }
+}
+
+Node* ABR::searchMaximum()
+{
+    Node* x = root;
+    //Scorro l'albero completamente a destra in modo tale da prende sempre i valori piu grandi
+    while(x->getRightChild())
+    {
+        x = x->getRightChild();
+    }
+    return x;
+
+}
+
+Node* ABR::searchMinimum()
+{
+    Node* x = root;
+    //Scorro l'albero completamente a sinistra in modo tale da prendere sempre i valori piu piccoli
+    while(x->getRightChild())
+    {
+        x = x->getLeftChild();
+    }
+    return x;
+
 }
 
 

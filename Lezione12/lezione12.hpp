@@ -40,13 +40,18 @@ class ABR
     //Costruttore
     public:
         ABR(){root = nullptr;}
+
     //Metodi
         void addNode(int x);
         void addNode(Node* newNode);
         //Visita root -> sx -> dx VisitaAnticipata
         void visita();
         void coutVisitaAnticipata(Node*root);
-        //Trova il successore
+        //Trova il successore e il predecessore
         Node* findSuccessor(Node* x);
+        Node* findPredecessor(Node* x);
         void deleteNode(Node* x);
+        //Trova il minimo ed il massimo
+        Node* searchMinimum();
+        Node* searchMaximum();
 };
