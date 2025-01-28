@@ -223,4 +223,71 @@ Node* ABR::searchMinimum()
 
 }
 
+//Ricerca una chiave all'interno del ABR
+Node* ABR::recursiveKeySearch(Node* start,int key)
+{
+    if(!start)
+    {
+        return start;
+    }
+    if(start->getDato() == key)
+    {
+        return start;
+    }
+    //Ciò significa che devo cercare a sinistra
+    if(start->getDato() > key)
+    {
+        return recursiveKeySearch(start->getLeftChild(),key);
+    //Altrimenti la chiave è maggiore e quindi devo ricercare a destra
+    }else
+    {
+        return recursiveKeySearch(start->getRightChild(),key);
+    }
+}
+Node* ABR::keySearch(int key)
+{
+    Node* temp = root;
+    temp = recursiveKeySearch(temp,key);
+    return temp;
+}
+void recursiveSommaFoglie(ABR* abr,Node* current,vector<int>& foglie)
+{
+    //Prendo i figli del nodo corrente
+    Node* sx = current->getLeftChild();
+    Node* dx = current->getRightChild();
+
+    //Se il nodo corrente non ha figlio sinistro e figlio destro allora è una foglia
+    if(!sx && !dx)
+    {
+        foglie.push_back(current->getDato());
+    }else if(!sx && dx)
+    {
+        recursiveSommaFoglie(abr,current->getRightChild(),foglie);
+    //Negli altri casi devo controllare i suoi figli per poter continuare la ricerca
+    }else if(sx && !dx)
+    {
+        recursiveSommaFoglie(abr,current->getLeftChild(),foglie);
+    }else
+    {
+        recursiveSommaFoglie(abr,current->getLeftChild(),foglie);
+        recursiveSommaFoglie(abr,current->getRightChild(),foglie);
+    }
+}
+int sommafoglie(ABR* abr)
+{
+    vector<int> foglie;
+    recursiveSommaFoglie(abr,abr->getRoot(),foglie);
+    int i = 0;
+    int somma = 0;
+    while(i < foglie.size())
+    {
+        somma += foglie[i];
+        i+=1;
+    }
+    return somma;
+}
+void searchKminimum(ABR* abr,vector<Node*> minimum)
+{
+
+}
 

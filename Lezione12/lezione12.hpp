@@ -44,6 +44,7 @@ class ABR
     //Metodi
         void addNode(int x);
         void addNode(Node* newNode);
+        Node* getRoot(){return root;}
         //Visita root -> sx -> dx VisitaAnticipata
         void visita();
         void coutVisitaAnticipata(Node*root);
@@ -54,4 +55,11 @@ class ABR
         //Trova il minimo ed il massimo
         Node* searchMinimum();
         Node* searchMaximum();
+        //Ricerca una chiave nell'albero. Restituisce il nodo contenente la chiave se la trova
+        Node* recursiveKeySearch(Node* start,int key);
+        Node* keySearch(int key);
 };
+//Algoritmi che si servono dell'utilizzo di un ABR
+int sommafoglie(ABR* abr);
+void recursiveSommaFoglie(ABR* abr,Node* current,vector<int>& foglie);
+void searchKminimum(ABR *abr);
